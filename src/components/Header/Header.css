@@ -1,0 +1,110 @@
+.headerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #26262e;
+    flex-flow: row wrap;
+    padding: 0 2em;
+    margin: 0;
+}
+
+.imgResponsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.searchContainer {
+    position: relative;
+    padding: 0.8em;
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+}
+
+.searchContainer input {
+    font-family: 'Crete Round', serif;
+    width: 100%;
+    margin: 0.5em 0;
+    outline: none;
+    padding: 0.5em;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+}
+
+.searchContainer input:focus {
+    border: 2px solid #0071bc;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+
+.searchIcon svg {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.socialButton {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+}
+
+.socialButton span {
+    margin: 3px
+}
+
+.socialButton span a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.instagram:hover {
+    color: #d63384;
+}
+
+.linkedin:hover {
+    color: #0d6efd;
+}
+
+.twitter:hover {
+    color: #0a58ca;
+}
+
+.twitch:hover {
+    color: #a970ff;
+}
+
+.personalNumber {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.personalNumber span {
+    padding-top: .3em;
+    margin-right: .3em;
+}
+
+.personalNumber label {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 991px) {
+    .headerContainer {
+        flex-direction: column;
+    }
+
+    .searchContainer {
+        width: 80%;
+    }
+
+    .socialButton {
+        display: none;
+    }
+}
