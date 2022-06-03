@@ -1,6 +1,8 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../components/images/logo.jpg";
+import { NavBar } from "./Navbar/NavBar";
+import { CartWidget } from "./CartWidget";
 import {
   FaSearch,
   FaInstagram,
@@ -8,17 +10,12 @@ import {
   FaTwitter,
   FaTwitch,
 } from "react-icons/fa";
-// import { Button } from "bootstrap";
 
 export const Header = () => {
   return (
     <header className="headerContainer">
       <div className="logoContainer">
-        <img
-          src={`${logo}`}
-          alt="Logo de la empresa"
-          className="imgResponsive"
-        ></img>
+        <img src={`${logo}`} alt="Company Logo" className="imgResponsive"></img>
       </div>
       <div className="searchContainer">
         <input type="text" placeholder="Busca tu producto aqui!"></input>
@@ -64,6 +61,13 @@ export const Header = () => {
           </a>
         </span>
       </div>
+      <div className="userSection">
+        <button>Ingresar</button>
+        <span>
+          <CartWidget />
+        </span>
+      </div>
+      <NavBar />
     </header>
   );
 };
