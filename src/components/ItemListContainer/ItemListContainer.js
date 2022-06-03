@@ -9,9 +9,17 @@ export const ItemListContainer = (props) => {
     softwareUsed = "React",
   } = props;
 
+  const companyName = `Bienvenidos a la lista de Productos de ${name}`;
+  const teamLead = `${name} es un proyecto liderado por ${leadName}`;
+  const software = `con el uso de la tecnologia de ${softwareUsed}`;
+
   return (
     <section className="itemListContainer">
-      <Products name={name} leadName={leadName} softwareUsed={softwareUsed} />
+      <Products
+        name={companyName}
+        leadName={teamLead}
+        softwareUsed={software}
+      />
     </section>
   );
 };

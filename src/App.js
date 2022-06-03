@@ -7,7 +7,12 @@ function App() {
   return (
     <>
       <Header />
-      <ItemListContainer />
+
+      <ItemListContainer
+        name="HardwareStore©"
+        leadName="Blanco Juan Cruz"
+        softwareUsed="React"
+      />
     </>
   );
 }
