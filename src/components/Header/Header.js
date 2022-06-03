@@ -3,6 +3,7 @@ import "./Header.css";
 import logo from "../../components/images/logo.jpg";
 import { NavBar } from "./Navbar/NavBar";
 import { CartWidget } from "./CartWidget";
+import { Button } from "../Buttons/Buttons";
 import {
   FaSearch,
   FaInstagram,
@@ -62,7 +63,7 @@ export const Header = () => {
         </span>
       </div>
       <div className="userSection">
-        <button>Ingresar</button>
+        <Button innerText="Ingresar" />
         <span>
           <CartWidget />
         </span>
