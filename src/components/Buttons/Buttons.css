@@ -1,4 +1,4 @@
-.userSection button {
+.logInButton {
     display: inline-block;
     outline: 0;
     cursor: pointer;
@@ -6,7 +6,7 @@
     border: 2px solid #024dbc;
     color: #fff;
     background-color: #024dbc;
-    padding: 8px;
+    padding: 0.5em;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -15,7 +15,7 @@
     height: 2.6em;
 }
 
-.userSection button:hover {
+.logInButton:hover {
     background: 0 0;
     color: #024dbc;
 }

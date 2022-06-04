@@ -7,6 +7,7 @@
     flex-flow: row wrap;
     padding: 0 2em;
     margin: 0;
+    flex-basis: 1fr;
 }
 
 .imgResponsive {
@@ -28,7 +29,7 @@
     width: 100%;
     margin: 0.5em 0;
     outline: none;
-    padding: 0.5em;
+    padding: 0.3em;
     border: 2px solid #aaa;
     border-radius: 5px;
 }
@@ -40,19 +41,20 @@
 .searchIcon {
     position: absolute;
     right: 22px;
-    top: 34px;
+    top: 28px;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
-.searchIcon svg {
-    font-weight: 900;
-    font-size: 1.2rem;
+.separateSection {
+    display: flex;
+    align-items: center;
 }
 
 .socialButton {
     display: flex;
     justify-content: space-between;
-    width: 10rem;
+    padding: 0 1rem;
 }
 
 .socialButton span {
@@ -81,26 +83,11 @@
     color: #a970ff;
 }
 
-.personalNumber {
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-
-.personalNumber span {
-    padding-top: .3em;
-    margin-right: .3em;
-}
-
-.personalNumber label {
-    font-size: 1.1rem;
-}
-
 .userSection {
-    width: 8vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .userSection span {
@@ -108,18 +95,27 @@
     font-size: 1.5em;
     font-weight: 900;
     cursor: pointer;
+    padding-left: .5em;
 }
 
 @media screen and (max-width: 991px) {
     .headerContainer {
-        flex-direction: column;
+        padding: 0;
     }
 
     .searchContainer {
         width: 80%;
     }
 
+    .separateSection {
+        padding-bottom: .5em;
+    }
+
     .socialButton {
-        display: none;
+        width: 100%;
+    }
+
+    .userSection {
+        width: 100%;
     }
 }

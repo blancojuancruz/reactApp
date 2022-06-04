@@ -24,50 +24,52 @@ export const Header = () => {
           <FaSearch />
         </span>
       </div>
-      <div className="socialButton">
-        <span>
-          <a
-            href="https://instagram.com/blancojuanchi"
-            target="blank"
-            className="instagram"
-          >
-            <FaInstagram />
-          </a>
-        </span>
-        <span>
-          <a
-            href="https://www.linkedin.com/in/juan-cruz-blanco-221790184/"
-            target="blank"
-            className="linkedin"
-          >
-            <FaLinkedin />
-          </a>
-        </span>
-        <span>
-          <a
-            href="https://twitter.com/blancojuanchi"
-            target="blank"
-            className="twitter"
-          >
-            <FaTwitter />
-          </a>
-        </span>
-        <span>
-          <a
-            href="https://www.twitch.tv/juanchibln"
-            target="blank"
-            className="twitch"
-          >
-            <FaTwitch />
-          </a>
-        </span>
-      </div>
-      <div className="userSection">
-        <Button innerText="Ingresar" />
-        <span>
-          <CartWidget />
-        </span>
-      </div>
+      <section className="separateSection">
+        <div className="socialButton">
+          <span>
+            <a
+              href="https://instagram.com/blancojuanchi"
+              target="blank"
+              className="instagram"
+            >
+              <FaInstagram />
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://www.linkedin.com/in/juan-cruz-blanco-221790184/"
+              target="blank"
+              className="linkedin"
+            >
+              <FaLinkedin />
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/blancojuanchi"
+              target="blank"
+              className="twitter"
+            >
+              <FaTwitter />
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://www.twitch.tv/juanchibln"
+              target="blank"
+              className="twitch"
+            >
+              <FaTwitch />
+            </a>
+          </span>
+        </div>
+        <div className="userSection">
+          <Button btnTxt="Ingresar" />
+          <span>
+            <CartWidget />
+          </span>
+        </div>
+      </section>
       <NavBar />
     </header>
   );
