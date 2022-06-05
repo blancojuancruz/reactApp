@@ -64,7 +64,7 @@ export const Header = () => {
           </span>
         </div>
         <div className="userSection">
-          <Button btnTxt="Ingresar" />
+          <Button btnTxt="Ingresar" className="logInButton" />
           <span>
             <CartWidget />
           </span>

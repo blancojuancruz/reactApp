@@ -1,6 +1,7 @@
 import React from "react";
 import { Products } from "./Products";
 import "./ItemListContainer.css";
+import "../../App.css";
 
 export const ItemListContainer = (props) => {
   const {

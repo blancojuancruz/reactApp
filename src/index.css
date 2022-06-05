@@ -4,12 +4,27 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  overflow: hidden;
 }
 
 img,
 svg {
   vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+ul,
+ol,
+li,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -22,4 +37,14 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --margin: .5em;
+  --padding: .5em;
+  --stColor: #0d6efd;
+  --ndColor: #024dbc;
+  --stFont: 'Crete Round', sans-serif;
+  --ndFont: "Roboto", serif;
+  --fontSize: 1.5em;
 }

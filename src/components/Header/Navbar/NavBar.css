@@ -5,6 +5,8 @@
     margin: 0;
     background-color: #aaa;
     border-radius: 5px;
+    position: sticky;
+    top: 0px;
 }
 
 .container {
@@ -24,12 +26,12 @@
     justify-content: space-around;
     padding: .3em .9em;
     margin: 0 !important;
-    font-family: 'Crete Round', sans-serif;
+    font-family: var(--stFont);
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .nav-link:hover {
-    color: #0d6efd !important;
+    color: var(--stColor) !important;
     transition: .3s;
 }

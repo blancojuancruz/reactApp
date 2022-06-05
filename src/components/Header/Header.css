@@ -5,9 +5,9 @@
     align-items: center;
     background-color: #26262e;
     flex-flow: row wrap;
-    padding: 0 2em;
+    padding: 0 .5em;
     margin: 0;
-    flex-basis: 1fr;
+    position: relative;
 }
 
 .imgResponsive {
@@ -18,14 +18,14 @@
 
 .searchContainer {
     position: relative;
-    padding: 0.8em;
+    padding: var(--padding);
     display: flex;
     justify-content: center;
     width: 30vw;
 }
 
 .searchContainer input {
-    font-family: 'Crete Round', serif;
+    font-family: var(--stFont);
     width: 100%;
     margin: 0.5em 0;
     outline: none;
@@ -35,13 +35,13 @@
 }
 
 .searchContainer input:focus {
-    border: 2px solid #0071bc;
+    border: 2px solid var(--ndColor);
 }
 
 .searchIcon {
     position: absolute;
-    right: 22px;
-    top: 28px;
+    right: 18px;
+    top: 23px;
     cursor: pointer;
     font-size: 1.2rem;
 }
@@ -54,7 +54,7 @@
 .socialButton {
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: var(--padding);
 }
 
 .socialButton span {
@@ -62,7 +62,7 @@
 }
 
 .socialButton span a {
-    font-size: 1.5em;
+    font-size: var(--fontSize);
     font-weight: bold;
     color: #fff;
 }
@@ -91,8 +91,8 @@
 }
 
 .userSection span {
-    color: #0d6efd;
-    font-size: 1.5em;
+    color: var(--stColor);
+    font-size: var(--fontSize);
     font-weight: 900;
     cursor: pointer;
     padding-left: .5em;

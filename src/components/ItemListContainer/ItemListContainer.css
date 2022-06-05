@@ -2,8 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: var(--padding);
     justify-content: center;
-    font-family: 'Roboto', serif;
+    font-family: var(--ndFont);
     font-weight: 900;
+    margin: var(--margin);
+    text-align: center;
+}
+
+.itemListContainer>h1,
+p,
+img,
+span {
+    padding: var(--padding);
 }
