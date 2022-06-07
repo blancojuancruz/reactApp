@@ -1,13 +1,12 @@
 .headerContainer {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: #26262e;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     padding: 0 .5em;
     margin: 0;
-    position: relative;
 }
 
 .imgResponsive {
@@ -21,7 +20,7 @@
     padding: var(--padding);
     display: flex;
     justify-content: center;
-    width: 30vw;
+    width: 20vw;
 }
 
 .searchContainer input {
@@ -49,6 +48,8 @@
 .separateSection {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .socialButton {
@@ -85,7 +86,7 @@
 
 .userSection {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 0 1rem;
 }
@@ -109,13 +110,5 @@
 
     .separateSection {
         padding-bottom: .5em;
-    }
-
-    .socialButton {
-        width: 100%;
-    }
-
-    .userSection {
-        width: 100%;
     }
 }

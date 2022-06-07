@@ -4,17 +4,17 @@
     display: inline-block;
     outline: 0;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 5px;
     border: 2px solid var(--ndColor);
     color: #fff;
     background-color: var(--ndColor);
-    padding: 0.5em;
+    padding: var(--padding);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
     font-weight: 700;
     letter-spacing: 0.5px;
     font-size: 1rem;
     font-family: var(--stFont);
-    height: 2.6em;
+    height: 2.6rem;
 }
 
 .defaultBtn:hover,
