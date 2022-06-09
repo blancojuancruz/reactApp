@@ -7,7 +7,7 @@ export const Button = ({
   event,
 }) => {
   return (
-    <button type="button" className={className} onClick={event}>
+    <button className={className} onClick={event}>
       {btnTxt}
     </button>
   );

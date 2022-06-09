@@ -27,7 +27,6 @@
 
 /* ADD TO CART BUTTON STYLES */
 .addToCart {
-    cursor: pointer;
     font-size: 14px;
     font-weight: 700;
     line-height: 30px;
@@ -35,6 +34,7 @@
     text-transform: uppercase;
     width: 100%;
     padding: 0 .3em;
+    cursor: pointer;
 }
 
 .hoverEfct {
@@ -56,3 +56,12 @@
 }
 
 /* ADD TO CART BUTTON STYLES */
+
+/*BUTTON DISABLED*/
+
+.btnDisabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/*BUTTON DISABLED*/

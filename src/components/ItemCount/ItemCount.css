@@ -13,6 +13,11 @@
     font-weight: 700;
 }
 
+.counterContainer h6 {
+    font-size: .8em;
+    font-weight: 900;
+}
+
 .countSection {
     font-size: var(--fontSize);
     display: flex;
@@ -27,4 +32,5 @@
 
 .itemOpacity {
     opacity: 0.5;
+    cursor: default;
 }

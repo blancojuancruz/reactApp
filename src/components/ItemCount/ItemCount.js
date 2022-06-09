@@ -5,7 +5,7 @@ import { PlusIcon } from "../MyIcons/Icons";
 import { NegativeIcon } from "../MyIcons/Icons";
 
 export const Counter = ({ productName, stock, initialValue }) => {
-  const [count, setCount] = useState(initialValue);
+  const [count, setCount] = useState(parseInt(initialValue));
 
   const handlePlus = () => {
     setCount(count + 1);
@@ -28,7 +28,7 @@ export const Counter = ({ productName, stock, initialValue }) => {
         ) : (
           <NegativeIcon className="itemOpacity" />
         )}
-        <span>{count}</span>
+        <h6>{count}</h6>
         {count < stock ? (
           <PlusIcon event={() => handlePlus()} />
         ) : (
@@ -44,7 +44,7 @@ export const Counter = ({ productName, stock, initialValue }) => {
           }}
         />
       ) : (
-        <Button btnTxt="Limpiar Carrito" className="addToCart itemOpacity" />
+        <Button btnTxt="Limpiar Carrito" className="addToCart btnDisabled" />
       )}
     </div>
   );
