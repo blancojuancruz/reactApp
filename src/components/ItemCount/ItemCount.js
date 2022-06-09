@@ -4,12 +4,7 @@ import { Button } from "../Buttons/Buttons";
 import { PlusIcon } from "../MyIcons/Icons";
 import { NegativeIcon } from "../MyIcons/Icons";
 
-export const Counter = ({
-  productName,
-  stock,
-  initialValue,
-  active = false,
-}) => {
+export const Counter = ({ productName, stock, initialValue }) => {
   const [count, setCount] = useState(initialValue);
 
   const handlePlus = () => {
