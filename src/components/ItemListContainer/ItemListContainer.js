@@ -2,6 +2,7 @@ import React from "react";
 import { Products } from "./Products";
 import "./ItemListContainer.css";
 import "../../App.css";
+import { Counter } from "../ItemCount/ItemCount";
 
 export const ItemListContainer = (props) => {
   const {
@@ -21,6 +22,8 @@ export const ItemListContainer = (props) => {
         leadName={teamLead}
         softwareUsed={software}
       />
+
+      <Counter productName="Memoria RAM" stock={10} initialValue={0} />
     </section>
   );
 };

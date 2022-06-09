@@ -1,0 +1,30 @@
+.counterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.counterContainer h3 {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.countSection {
+    font-size: var(--fontSize);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.countSection span {
+    cursor: pointer;
+}
+
+.itemOpacity {
+    opacity: 0.5;
+}

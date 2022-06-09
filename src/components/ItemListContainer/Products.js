@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../components/images/logo.jpg";
-import { Button } from "../Buttons/Buttons";
 
 export const Products = ({ name, leadName, softwareUsed }) => {
   return (
@@ -12,7 +11,6 @@ export const Products = ({ name, leadName, softwareUsed }) => {
         Les damos una calida bienvenida a este nuevo Proyecto.
       </p>
       <img src={`${logo}`} alt="Company Logo"></img>
-      <Button btnTxt="Ver Productos" className="addToCart hoverEfct" />
     </>
   );
 };
