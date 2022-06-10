@@ -39,8 +39,8 @@
 
 .searchIcon {
     position: absolute;
-    right: 8px;
-    top: 14px;
+    right: 15px;
+    top: 23px;
     cursor: pointer;
     font-size: 1.2rem;
 }
@@ -93,8 +93,7 @@
 
 .userSection span {
     color: var(--stColor);
-    font-size: var(--fontSize);
-    font-weight: 900;
+    font-size: 1.3em;
     cursor: pointer;
     padding-left: .5em;
 }

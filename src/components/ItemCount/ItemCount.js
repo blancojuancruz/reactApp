@@ -35,17 +35,20 @@ export const Counter = ({ productName, stock, initialValue }) => {
           <PlusIcon className="itemOpacity" />
         )}
       </div>
-      {count > initialValue ? (
-        <Button
-          btnTxt="Limpiar Carrito"
-          className="addToCart hoverEfct"
-          event={() => {
-            handleCleanCart();
-          }}
-        />
-      ) : (
-        <Button btnTxt="Limpiar Carrito" className="addToCart btnDisabled" />
-      )}
+      <div className="keypadCont">
+        <Button btnTxt="Details" className="addToCart hoverEfct" />
+        {count > initialValue ? (
+          <Button
+            btnTxt="Clean Cart"
+            className="addToCart hoverEfct"
+            event={() => {
+              handleCleanCart();
+            }}
+          />
+        ) : (
+          <Button btnTxt="Clean Cart" className="addToCart btnDisabled" />
+        )}
+      </div>
     </div>
   );
 };

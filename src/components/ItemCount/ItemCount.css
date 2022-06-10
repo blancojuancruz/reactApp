@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 1.5rem;
-    position: relative;
+    width: 80%;
 }
 
 .counterContainer h3 {
@@ -28,6 +27,15 @@
 
 .countSection span {
     cursor: pointer;
+}
+
+.keypadCont {
+    display: flex;
+    width: 100%;
+}
+
+.keypadCont button {
+    margin: 0 .2em;
 }
 
 .itemOpacity {
