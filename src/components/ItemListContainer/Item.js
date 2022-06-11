@@ -9,8 +9,8 @@ export const Product = ({ productImg, productName, productPrice, stock }) => {
         <img src={productImg} alt="Product illustration"></img>
       </div>
       <h2>{productName}</h2>
-      <span>Unit price: ${productPrice}</span>
-      <p>Stock Disponible: {stock}</p>
+      <span>Precio por unidad: ${productPrice}</span>
+      <p>Stock Disponible: {stock} unidades</p>
       <Counter initialValue={0} stock={stock} />
     </div>
   );

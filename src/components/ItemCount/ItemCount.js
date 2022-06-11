@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./ItemCount.css";
 import { Button } from "../Buttons/Buttons";
-import { PlusIcon } from "../MyIcons/Icons";
-import { NegativeIcon } from "../MyIcons/Icons";
+import { PlusIcon } from "../Buttons/MyIcons/Icons";
+import { NegativeIcon } from "../Buttons/MyIcons/Icons";
 
 export const Counter = ({ productName, stock, initialValue }) => {
   const [count, setCount] = useState(parseInt(initialValue));
@@ -36,17 +36,17 @@ export const Counter = ({ productName, stock, initialValue }) => {
         )}
       </div>
       <div className="keypadCont">
-        <Button btnTxt="Details" className="addToCart hoverEfct" />
+        <Button btnTxt="Detalle" className="addToCart hoverEfct" />
         {count > initialValue ? (
           <Button
-            btnTxt="Clean Cart"
+            btnTxt="Limpiar carrito"
             className="addToCart hoverEfct"
             event={() => {
               handleCleanCart();
             }}
           />
         ) : (
-          <Button btnTxt="Clean Cart" className="addToCart btnDisabled" />
+          <Button btnTxt="Limpiar carrito" className="addToCart btnDisabled" />
         )}
       </div>
     </div>

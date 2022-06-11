@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Product } from "./Item";
+import { Spinner } from "../Buttons/MySpinner/Spinner";
 import "./ItemListContainer.css";
 
 const myPromise = new Promise((resolve, reject) => {
@@ -9,23 +10,23 @@ const myPromise = new Promise((resolve, reject) => {
       productName: "Mother Gigabyte GA-A320M-S2H Ryzen",
       productPrice: 10.159,
       productImg:
-        "https://http2.mlstatic.com/D_NQ_NP_826329-MLA47526290999_092021-O.webp",
+        "https://www.venex.com.ar/products_images/thumb/1585334803_gigabyte_a320mh_am4.jpg",
       stock: "11",
     },
     {
       id: "2",
-      productName: "Gabinete ASUS ROG STRIX Helios Aluminum Black",
+      productName: "Gabinete ASUS ROG STRIX Helios",
       productPrice: 179.319,
       productImg:
-        "https://http2.mlstatic.com/D_NQ_NP_783889-MLA49816166061_042022-O.webp",
+        "https://www.venex.com.ar/products_images/thumb/1637258874_h350_1.jpg",
       stock: "25",
     },
     {
       id: "3",
-      productName: "Mouse Logitech G903 Lightspeed Wireless",
+      productName: "Mouse Logitech G903 Lightspeed",
       productPrice: 13.199,
       productImg:
-        "https://http2.mlstatic.com/D_NQ_NP_974506-MLA32148386648_092019-O.webp",
+        "https://www.venex.com.ar/products_images/thumb/1602868547_345345.jpg",
       stock: "18",
     },
     {
@@ -33,7 +34,7 @@ const myPromise = new Promise((resolve, reject) => {
       productName: "Memoria GeiL DDR4 8GB 3000MHz RGB",
       productPrice: 7.475,
       productImg:
-        "https://http2.mlstatic.com/D_NQ_NP_787427-MLA49971771721_052022-O.webp",
+        "https://www.venex.com.ar/products_images/thumb/1597155903_ddr4xlr8desktoprgb3200mhzfr.jpg",
       stock: "3",
     },
   ];
@@ -49,12 +50,7 @@ const myPromise = new Promise((resolve, reject) => {
 
 export const ItemList = () => {
   const [myProducts, setmyProducts] = useState([]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      promiseResolve();
-    }, 2000);
-  }, [myProducts]);
+  const [spinner, setSpinner] = useState(false);
 
   const promiseResolve = () => {
     myPromise.then((products) => {
@@ -62,11 +58,21 @@ export const ItemList = () => {
     });
   };
 
+  useEffect(() => {
+    setSpinner(true);
+    setTimeout(() => {
+      setSpinner(false);
+      promiseResolve();
+    }, 2000);
+  }, []);
+
   return (
     <>
-      {myProducts.map((product) => (
-        <Product key={product.id} {...product} />
-      ))}
+      {!spinner ? (
+        myProducts.map((product) => <Product key={product.id} {...product} />)
+      ) : (
+        <Spinner />
+      )}
     </>
   );
 };
