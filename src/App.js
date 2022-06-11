@@ -1,17 +1,14 @@
 import React from "react";
 import { Header } from "./components/Header/Header";
+import { NavBar } from "./components/Header/Navbar/NavBar";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
     <>
       <Header />
-
-      <ItemListContainer
-        name="HardwareStore©"
-        leadName="Blanco Juan Cruz"
-        softwareUsed="React"
-      />
+      <NavBar />
+      <ItemListContainer />
     </>
   );
 }

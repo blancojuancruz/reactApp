@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../components/images/logo.jpg";
-import { NavBar } from "./Navbar/NavBar";
 import { CartWidget } from "../Buttons/MyIcons/Icons";
 import { Button } from "../Buttons/Buttons";
 import {
@@ -70,7 +69,6 @@ export const Header = () => {
           </span>
         </div>
       </section>
-      <NavBar />
     </header>
   );
 };

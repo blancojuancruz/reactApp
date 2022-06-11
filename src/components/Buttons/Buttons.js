@@ -5,10 +5,8 @@ export const Button = ({
   btnTxt = "Ingresar",
   className = "defaultBtn",
   event,
-}) => {
-  return (
-    <button className={className} onClick={event}>
-      {btnTxt}
-    </button>
-  );
-};
+}) => (
+  <button className={className} onClick={event}>
+    {btnTxt}
+  </button>
+);

@@ -39,18 +39,12 @@ const myPromise = new Promise((resolve, reject) => {
     },
   ];
 
-  const error = "Lo sentimos la pagina no esta disponible";
-
-  if (products.length > 0) {
-    resolve(products);
-  } else {
-    reject(error);
-  }
+  products.length > 0 ? resolve(products) : reject("404 Page Not Found");
 });
 
 export const ItemList = () => {
   const [myProducts, setmyProducts] = useState([]);
-  const [spinner, setSpinner] = useState(false);
+  const [isLoading, setisLoading] = useState(false);
 
   const promiseResolve = () => {
     myPromise.then((products) => {
@@ -59,19 +53,19 @@ export const ItemList = () => {
   };
 
   useEffect(() => {
-    setSpinner(true);
+    setisLoading(true);
     setTimeout(() => {
-      setSpinner(false);
+      setisLoading(false);
       promiseResolve();
     }, 2000);
   }, []);
 
   return (
     <>
-      {!spinner ? (
-        myProducts.map((product) => <Product key={product.id} {...product} />)
-      ) : (
+      {isLoading ? (
         <Spinner />
+      ) : (
+        myProducts.map((product) => <Product key={product.id} {...product} />)
       )}
     </>
   );

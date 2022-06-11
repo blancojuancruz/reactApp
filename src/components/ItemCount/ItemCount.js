@@ -24,13 +24,13 @@ export const Counter = ({ productName, stock, initialValue }) => {
       <h3>{productName}</h3>
       <div className="countSection">
         {count > initialValue ? (
-          <NegativeIcon event={() => handleMinus()} />
+          <NegativeIcon event={handleMinus} />
         ) : (
           <NegativeIcon className="itemOpacity" />
         )}
         <h6>{count}</h6>
         {count < stock ? (
-          <PlusIcon event={() => handlePlus()} />
+          <PlusIcon event={handlePlus} />
         ) : (
           <PlusIcon className="itemOpacity" />
         )}
@@ -41,9 +41,7 @@ export const Counter = ({ productName, stock, initialValue }) => {
           <Button
             btnTxt="Limpiar carrito"
             className="addToCart hoverEfct"
-            event={() => {
-              handleCleanCart();
-            }}
+            event={handleCleanCart}
           />
         ) : (
           <Button btnTxt="Limpiar carrito" className="addToCart btnDisabled" />
