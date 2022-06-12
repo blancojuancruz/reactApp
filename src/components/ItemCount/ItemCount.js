@@ -19,33 +19,42 @@ export const Counter = ({ productName, stock, initialValue }) => {
     setCount(initialValue);
   };
 
+  const plusIconTest =
+    count > initialValue ? (
+      <NegativeIcon event={handleMinus} />
+    ) : (
+      <NegativeIcon className="itemOpacity" />
+    );
+
+  const minusIconTest =
+    count < stock ? (
+      <PlusIcon event={handlePlus} />
+    ) : (
+      <PlusIcon className="itemOpacity" />
+    );
+
+  const trueFalseButton =
+    count > initialValue ? (
+      <Button
+        btnTxt="Limpiar carrito"
+        className="addToCart hoverEfct"
+        event={handleCleanCart}
+      />
+    ) : (
+      <Button btnTxt="Limpiar carrito" className="addToCart btnDisabled" />
+    );
+
   return (
     <div className="counterContainer">
       <h3>{productName}</h3>
       <div className="countSection">
-        {count > initialValue ? (
-          <NegativeIcon event={handleMinus} />
-        ) : (
-          <NegativeIcon className="itemOpacity" />
-        )}
+        {plusIconTest}
         <h6>{count}</h6>
-        {count < stock ? (
-          <PlusIcon event={handlePlus} />
-        ) : (
-          <PlusIcon className="itemOpacity" />
-        )}
+        {minusIconTest}
       </div>
       <div className="keypadCont">
         <Button btnTxt="Detalle" className="addToCart hoverEfct" />
-        {count > initialValue ? (
-          <Button
-            btnTxt="Limpiar carrito"
-            className="addToCart hoverEfct"
-            event={handleCleanCart}
-          />
-        ) : (
-          <Button btnTxt="Limpiar carrito" className="addToCart btnDisabled" />
-        )}
+        {trueFalseButton}
       </div>
     </div>
   );

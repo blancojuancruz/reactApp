@@ -5,7 +5,7 @@ import { ItemList } from "./ItemList";
 
 export const ItemListContainer = () => {
   return (
-    <section className="itemListContainer">
+    <section className="productsContainer">
       <ItemList />
     </section>
   );
