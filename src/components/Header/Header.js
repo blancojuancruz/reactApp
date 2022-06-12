@@ -4,25 +4,23 @@ import logo from "../../components/images/logo.jpg";
 import { CartWidget } from "../Buttons/MyIcons/Icons";
 import { Button } from "../Buttons/Buttons";
 import {
-  FaSearch,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
   FaTwitch,
+  FaSearch,
 } from "react-icons/fa";
 
 export const Header = () => {
   return (
     <header className="headerContainer">
       <div className="logoContainer">
-        <img src={`${logo}`} alt="Company Logo" className="imgResponsive"></img>
+        <img src={logo} alt="Company Logo" className="imgResponsive"></img>
       </div>
-      <div className="searchContainer">
+      <span className="searchContainer">
         <input type="text" placeholder="Busca tu producto aqui!"></input>
-        <span className="searchIcon">
-          <FaSearch />
-        </span>
-      </div>
+        <Button btnTxt={<FaSearch />} className="searchBtn" />
+      </span>
       <section className="separateSection">
         <div className="socialButton">
           <span>

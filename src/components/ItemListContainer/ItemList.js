@@ -97,8 +97,12 @@ const myPromise = new Promise((resolve, reject) => {
       rebate: true,
     },
   ];
+  resolve(products);
 
-  products.length > 0 ? resolve(products) : reject("404 Page Not Found");
+  const error = "404 Error: Page not Found";
+  if (!products) {
+    reject(error);
+  }
 });
 
 export const ItemList = () => {

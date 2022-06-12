@@ -11,6 +11,10 @@ svg {
   vertical-align: baseline;
 }
 
+button {
+  line-height: none;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -28,7 +32,7 @@ code {
   --padding: .5em;
   --stColor: #0d6efd;
   --ndColor: #024dbc;
-  --stFont: 'Crete Round', sans-serif;
+  --stFont: 'Noto Sans Display', sans-serif;
   --ndFont: "Roboto", serif;
   --fontSize: 1.5em;
 }
