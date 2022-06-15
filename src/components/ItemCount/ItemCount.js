@@ -4,7 +4,7 @@ import { Button } from "../Buttons/Buttons";
 import { PlusIcon } from "../Buttons/MyIcons/Icons";
 import { NegativeIcon } from "../Buttons/MyIcons/Icons";
 
-export const Counter = ({ stock, initialValue }) => {
+export const Counter = ({ stock, initialValue = 0 }) => {
   const [count, setCount] = useState(parseInt(initialValue));
 
   const handlePlus = () => {
@@ -52,7 +52,7 @@ export const Counter = ({ stock, initialValue }) => {
         {minusIconTest}
       </div>
       <div className="keypadCont">
-        <Button btnTxt="Detalle" className="addToCart hoverEfct" />
+        <Button btnTxt="Añadir cantidad" className="addToCart hoverEfct" />
         {trueFalseButton}
       </div>
     </div>

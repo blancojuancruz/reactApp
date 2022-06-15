@@ -32,7 +32,7 @@ code {
   --padding: .5em;
   --stColor: #0d6efd;
   --ndColor: #024dbc;
-  --stFont: 'Noto Sans Display', sans-serif;
+  --stFont: "Noto Sans Display", sans-serif;
   --ndFont: "Roboto", serif;
   --fontSize: 1.5em;
 }

@@ -10,12 +10,10 @@ export const ItemList = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    setTimeout(() => {
-      getProducts().then((data) => {
-        setMyProducts(data);
-        setIsLoading(false);
-      });
-    }, 2000);
+    getProducts().then((data) => {
+      setIsLoading(false);
+      setMyProducts(data);
+    });
   }, []);
 
   const showRebateProduct = products

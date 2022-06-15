@@ -7,12 +7,6 @@
     user-select: none;
 }
 
-.counterContainer h3 {
-    font-family: 'Crete Round', sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
 .counterContainer h6 {
     font-size: .8em;
     font-weight: 900;
@@ -32,7 +26,11 @@
 
 .keypadCont {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
     width: 100%;
+    font-family: var(--ndFont);
 }
 
 .keypadCont button {
