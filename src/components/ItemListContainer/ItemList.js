@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import "./ItemListContainer.css";
 import { Product } from "./Item";
 import { Spinner } from "../Buttons/MySpinner/Spinner";
-import "./ItemListContainer.css";
 import { getProducts } from "../Services/getProducts";
 
 export const ItemList = () => {

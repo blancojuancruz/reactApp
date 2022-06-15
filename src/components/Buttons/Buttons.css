@@ -85,3 +85,25 @@
 }
 
 /*SEARCH BUTTON*/
+
+/*BUY BUTTON */
+.buyButton {
+    width: 55%;
+    background-color: #3483fa;
+    border-color: #3483fa;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.8em 1.3em;
+    border-bottom: solid px #3483fa;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.buyButton:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+/*BUY BUTTON */

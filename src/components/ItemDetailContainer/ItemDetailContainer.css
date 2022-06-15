@@ -1,0 +1,122 @@
+.loadWrapp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.productDetailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: var(--padding);
+    gap: 20px;
+}
+
+.productDetailContainer figure {
+    width: 707px;
+    height: 643px;
+    border-right: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    padding-left: 2em;
+}
+
+.productDetailContainer figure img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.productDetailContainer figcaption {
+    text-align: center;
+    font-family: var(--stFont);
+    color: #37373f;
+    font-weight: 900;
+    line-height: .6em;
+}
+
+.descriptionContainer {
+    height: 400px;
+    width: 30%;
+    padding: 1.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 10px solid #3483fa;
+    font-size: 1em;
+}
+
+.descriptionContainer h2 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-family: var(--stFont);
+    font-weight: unset;
+}
+
+.descriptionContainer span,
+p,
+h2 {
+    color: #37373f;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.counterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    user-select: none;
+}
+
+.countSection {
+    font-size: var(--fontSize);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+@media screen and (max-width: 991px) {
+    .productDetailContainer {
+        flex-direction: column;
+    }
+
+    .productDetailContainer figure {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-right: none;
+    }
+
+    .productDetailContainer figcaption {
+        display: none;
+    }
+
+    .descriptionContainer {
+        width: 100%;
+        border-left: none;
+        border-top: 10px solid #3483fa;
+    }
+
+    .descriptionContainer h2 {
+        font-size: 1.2em;
+    }
+
+    .descriptionContainer span,
+    p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .counterContainer {
+        width: 100%;
+    }
+
+    .buyButton {
+        width: 80%;
+    }
+}
