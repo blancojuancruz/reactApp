@@ -45,13 +45,14 @@
     display: flex;
     justify-content: space-between;
     padding: var(--padding);
+    margin: 0;
 }
 
-.socialButton span {
+.socialButton li {
     margin: .5em;
 }
 
-.socialButton span a {
+.socialButton li a {
     font-size: var(--fontSize);
     font-weight: bold;
     color: #fff;
@@ -78,13 +79,17 @@
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
+    gap: 10px;
 }
 
-.userSection span {
+.cartIcon {
     color: var(--stColor);
     font-size: 1.3em;
     cursor: pointer;
-    padding-left: .5em;
+}
+
+.cartIcon svg {
+    vertical-align: baseline;
 }
 
 @media screen and (max-width: 991px) {

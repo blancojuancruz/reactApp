@@ -13,7 +13,7 @@
     gap: 20px;
 }
 
-.productDetailContainer figure {
+.productDetailContainer picture {
     width: 707px;
     height: 643px;
     border-right: 1px solid #aaa;
@@ -21,17 +21,9 @@
     padding-left: 2em;
 }
 
-.productDetailContainer figure img {
+.productDetailContainer picture img {
     max-width: 100%;
     max-height: 100%;
-}
-
-.productDetailContainer figcaption {
-    text-align: center;
-    font-family: var(--stFont);
-    color: #37373f;
-    font-weight: 900;
-    line-height: .6em;
 }
 
 .descriptionContainer {
