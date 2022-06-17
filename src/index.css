@@ -36,3 +36,7 @@ code {
   --ndFont: "Roboto", serif;
   --fontSize: 1.5em;
 }
+
+html {
+  scroll-behavior: smooth;
+}

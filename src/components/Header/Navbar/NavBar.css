@@ -5,8 +5,8 @@
     margin: 0 !important;
     background-color: #aaa;
     border-radius: 5px;
-    position: sticky;
-    top: 0px;
+    position: sticky !important;
+    top: 0;
 }
 
 .container {
@@ -29,6 +29,10 @@
     font-family: var(--stFont);
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.navbar-nav a svg {
+    vertical-align: baseline;
 }
 
 .nav-link:hover {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 import { Product } from './Item'
 import { Spinner } from '../Buttons/MySpinner/Spinner'
@@ -8,11 +9,13 @@ export const ItemList = () => {
   const [products, setMyProducts] = useState([])
   const [isLoading, setIsLoading] = useState(false)
 
+  const { productsType } = useParams()
+
   useEffect(() => {
     setIsLoading(true)
     getProducts().then((data) => {
       setIsLoading(false)
-      setMyProducts(data)
+      productsType ? setMyProducts(data.filter(product => product.type === productsType)) : setMyProducts(data)
     })
   }, [])
 

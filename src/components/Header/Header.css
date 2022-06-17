@@ -82,6 +82,12 @@
     gap: 10px;
 }
 
+.userSection button:hover {
+    transition: .3s;
+    background-color: var(--ndColor);
+    color: #fff;
+}
+
 .cartIcon {
     color: var(--stColor);
     font-size: 1.3em;
