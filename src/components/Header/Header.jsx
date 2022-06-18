@@ -4,7 +4,7 @@ import { CartWidget } from '../Buttons/MyIcons/Icons'
 import { Button } from '../Buttons/Buttons'
 import { LogInModal } from './LogInModal/LogInModal'
 import { FaSearch } from 'react-icons/fa'
-import logo from '../../components/images/logo.jpg'
+import logo from '../../assets/logo.jpg'
 import './Header.css'
 
 export const Header = () => {
