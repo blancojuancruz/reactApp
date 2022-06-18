@@ -3,7 +3,7 @@ import './NavBar.css'
 import { GoLocation } from 'react-icons/go'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 
-export const NavBar = ({ type }) => {
+export const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand='lg'>
       <Container>

@@ -14,8 +14,8 @@
 }
 
 .productDetailContainer picture {
-    width: 707px;
-    height: 643px;
+    width: 800px;
+    height: 800px;
     border-right: 1px solid #aaa;
     border-left: 1px solid #aaa;
     padding-left: 2em;
@@ -43,6 +43,8 @@
     line-height: 1.2em;
     font-family: var(--stFont);
     font-weight: unset;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .descriptionContainer span,

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { FaInstagram, FaLinkedin, FaTwitter, FaTwitch } from 'react-icons/fa'
 import './Header.css'
 
@@ -7,31 +6,32 @@ export const SocialButtons = () => {
   return (
     <ul className='socialButton'>
       <li>
-        <Link
-          to='https://www.instagram.com/blancojuanchi/'
-          className='instagram'
+        <a
+          target='_blank'
+          href='https://www.instagram.com/blancojuanchi/'
+          className='instagram' rel='noreferrer'
         >
           <FaInstagram />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link
-          to='https://www.linkedin.com/in/juan-cruz-blanco/'
+        <a
+          href='https://www.linkedin.com/in/juan-cruz-blanco/'
           className='linkedin'
-          about='_blank'
+          target='_blank' rel='noreferrer'
         >
           <FaLinkedin />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link to='https://twitter.com/blancojuanchi' className='twitter'>
+        <a href='https://twitter.com/blancojuanchi' className='twitter' target='_blank' rel='noreferrer'>
           <FaTwitter />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link to='https://www.twitch.tv/juanchibln' className='twitch'>
+        <a href='https://www.twitch.tv/juanchibln' className='twitch' target='_blank' rel='noreferrer'>
           <FaTwitch />
-        </Link>
+        </a>
       </li>
     </ul>
   )

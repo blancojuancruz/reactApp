@@ -6,10 +6,10 @@ import './Footer.css'
 
 export const Footer = () => {
   return (
-    <section className='footerContainer'>
+    <footer className='footerContainer'>
       <FooterContact />
       <NewsLetter />
       <PayMethod />
-    </section>
+    </footer>
   )
 }

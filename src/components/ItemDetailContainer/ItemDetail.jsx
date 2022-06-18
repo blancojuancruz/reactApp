@@ -6,7 +6,6 @@ import './ItemDetailContainer.css'
 export const ItemDetail = ({ productDetail }) => {
   return (
     <section className='productDetailContainer'>
-
       <picture>
         <img src={productDetail.productImg} alt='Product illustration' />
       </picture>

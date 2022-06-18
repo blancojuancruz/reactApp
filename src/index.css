@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300;400;600&display=swap');
 
+body {
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 28rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none !important;
-  list-style: none !important;
+  list-style: none;
 }
 
 img,
@@ -15,13 +22,6 @@ svg {
 
 button {
   line-height: none;
-}
-
-body {
-  font-family: 'Raleway', sans-serif;
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 22.5rem;
 }
 
 code {
