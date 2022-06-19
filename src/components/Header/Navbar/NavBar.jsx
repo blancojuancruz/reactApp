@@ -16,16 +16,16 @@ export const NavBar = () => {
               <NavDropdown.Item href='/typeofproduct/motherboard'>Placas Madre</NavDropdown.Item>
               <NavDropdown.Item href='/typeofproduct/ramMemory'>Memorias RAM</NavDropdown.Item>
               <NavDropdown.Item href='/typeofproduct/amdprocessor'>Prcesadores AMD</NavDropdown.Item>
-              <NavDropdown.Item href='/typeofproduct/motherboard'>Prcesadores INTEL</NavDropdown.Item>
+              <NavDropdown.Item href='/typeofproduct/intelprocessor'>Prcesadores INTEL</NavDropdown.Item>
               <NavDropdown.Item href='/typeofproduct/ssdDisk'>Almacenamiento SSD</NavDropdown.Item>
               <NavDropdown.Item href='/typeofproduct/hddDisk'>Almacenamiento HDD</NavDropdown.Item>
               <NavDropdown.Item href='/typeofproduct/electricSource'>Fuentes</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title='Perifericos' id='basic-nav-dropdown'>
               <NavDropdown.Item href='/typeofproduct/mouse'>Mouse Gamer</NavDropdown.Item>
-              <NavDropdown.Item href='/typeofproduct/keyboards'>Teclados</NavDropdown.Item>
+              <NavDropdown.Item href='/typeofproduct/keyboard'>Teclados</NavDropdown.Item>
               <NavDropdown.Item href='/typeofproduct/screen'>Monitores</NavDropdown.Item>
-              <NavDropdown.Item href='/typeofproduct/red'>Otros</NavDropdown.Item>
+              <NavDropdown.Item href='/typeofproduct/videoCard'>Placas de video</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='#'>Encontra nuestros locales<GoLocation /></Nav.Link>
           </Nav>

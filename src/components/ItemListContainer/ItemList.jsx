@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 import { Product } from './Item'
 import { Spinner } from '../Buttons/MySpinner/Spinner'
-import { getProducts } from '../Services/getProducts'
+import { getProducts } from '../../Services/getProducts'
 
 export const ItemList = () => {
   const [products, setMyProducts] = useState([])

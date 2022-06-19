@@ -19,14 +19,13 @@
 .productContainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding: var(--padding);
     border-radius: 4px;
     border: 1px solid #aaa;
     font-family: var(--stFont);
     background: linear-gradient(to bottom, #FFFFFF, #D6D6D6);
-    width: fit-content;
+    max-height: fit-content;
 }
 
 .productContainer a {
@@ -39,6 +38,7 @@
     font-weight: 900;
     font-family: var(--stFont);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .productsContainer h2 {
