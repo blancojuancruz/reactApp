@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { ItemDetail } from './ItemDetail'
-import { getProducts } from '../Services/getProducts'
+import { getProducts } from '../../Services/getProducts'
 import { Spinner } from '../Buttons/MySpinner/Spinner'
 import './ItemDetailContainer.css'
 
