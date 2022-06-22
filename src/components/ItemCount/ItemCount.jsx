@@ -1,36 +1,24 @@
 import React, { useState } from 'react'
-import './ItemCount.css'
 import { Button } from '../Buttons/Buttons'
 import { PlusIcon, NegativeIcon } from '../Buttons/MyIcons/Icons'
+import './ItemCount.css'
 
-export const Counter = ({ stock, initialValue = 0 }) => {
-  const [count, setCount] = useState(parseInt(initialValue))
+export const Counter = ({ stock, initialValue, addToCart }) => {
+  const [count, setCount] = useState(initialValue)
 
-  const handlePlus = () => {
-    setCount(count + 1)
-  }
-
-  const handleMinus = () => {
-    setCount(count - 1)
-  }
-
-  const handleCleanCart = () => {
-    setCount(initialValue)
-  }
-
-  const plusIconTest =
+  const plusIcon =
     count > initialValue
       ? (
-        <NegativeIcon event={handleMinus} />
+        <NegativeIcon event={() => { setCount(count - 1) }} />
         )
       : (
         <NegativeIcon className='itemOpacity' />
         )
 
-  const minusIconTest =
+  const minusIcon =
     count < stock
       ? (
-        <PlusIcon event={handlePlus} />
+        <PlusIcon event={() => { setCount(count + 1) }} />
         )
       : (
         <PlusIcon className='itemOpacity' />
@@ -42,7 +30,7 @@ export const Counter = ({ stock, initialValue = 0 }) => {
         <Button
           btnTxt='Limpiar carrito'
           className='addToCart hoverEfct'
-          event={handleCleanCart}
+          event={() => { setCount(initialValue) }}
         />
         )
       : (
@@ -52,14 +40,14 @@ export const Counter = ({ stock, initialValue = 0 }) => {
   return (
     <div className='counterContainer'>
       <div className='countSection'>
-        {plusIconTest}
+        {plusIcon}
         <h6>{count}</h6>
-        {minusIconTest}
+        {minusIcon}
       </div>
       <div className='keypadCont'>
-        <Button btnTxt='Añadir cantidad' className='addToCart hoverEfct' />
         {trueFalseButton}
       </div>
+      {count > 0 ? <Button className='buyButton' btnTxt='Añadir al carrito' event={() => addToCart(count)} /> : <Button className='buyButton btnDisabled' btnTxt='Añadir al carrito' />}
     </div>
   )
 }

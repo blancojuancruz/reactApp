@@ -14,8 +14,8 @@
 }
 
 .productDetailContainer picture {
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     border-right: 1px solid #aaa;
     border-left: 1px solid #aaa;
     padding-left: 2em;
@@ -63,6 +63,7 @@ h2 {
     justify-content: center;
     width: 70%;
     user-select: none;
+    gap: 15px;
 }
 
 .countSection {

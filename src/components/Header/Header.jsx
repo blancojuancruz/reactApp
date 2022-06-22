@@ -4,6 +4,7 @@ import { CartWidget } from '../Buttons/MyIcons/Icons'
 import { Button } from '../Buttons/Buttons'
 import { LogInModal } from './LogInModal/LogInModal'
 import { FaSearch } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.jpg'
 import './Header.css'
 
@@ -22,7 +23,7 @@ export const Header = () => {
         <div className='userSection'>
           <LogInModal />
           <span>
-            <CartWidget className='cartIcon' />
+            <Link to='/clientCart'><CartWidget className='cartIcon' /></Link>
           </span>
         </div>
       </section>
