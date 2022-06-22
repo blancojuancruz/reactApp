@@ -9,7 +9,7 @@ export const Counter = ({ stock, initialValue, addToCart }) => {
   const plusIcon =
     count > initialValue
       ? (
-        <NegativeIcon event={() => { setCount(count - 1) }} />
+        <NegativeIcon event={() => { setCount(prevCount => prevCount - 1) }} />
         )
       : (
         <NegativeIcon className='itemOpacity' />
@@ -18,7 +18,7 @@ export const Counter = ({ stock, initialValue, addToCart }) => {
   const minusIcon =
     count < stock
       ? (
-        <PlusIcon event={() => { setCount(count + 1) }} />
+        <PlusIcon event={() => { setCount(prevCount => prevCount + 1) }} />
         )
       : (
         <PlusIcon className='itemOpacity' />
@@ -47,7 +47,7 @@ export const Counter = ({ stock, initialValue, addToCart }) => {
       <div className='keypadCont'>
         {trueFalseButton}
       </div>
-      {count > 0 ? <Button className='buyButton' btnTxt='Añadir al carrito' event={() => addToCart(count)} /> : <Button className='buyButton btnDisabled' btnTxt='Añadir al carrito' />}
+      {count > 0 ? <Button className='buyButton' btnTxt='Añadir al carrito' event={() => addToCart()} /> : <Button className='buyButton btnDisabled' btnTxt='Añadir al carrito' />}
     </div>
   )
 }

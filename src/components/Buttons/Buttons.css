@@ -96,7 +96,7 @@
     padding: 0.8em 1.3em;
     border-bottom: solid px #3483fa;
     text-transform: uppercase;
-    letter-spacing: .1em;
+    font-weight: bold;
 }
 
 .buyButton:active {
