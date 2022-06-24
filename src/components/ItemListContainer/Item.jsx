@@ -11,7 +11,7 @@ export const Product = ({
     <div className='productContainer'>
       <Link to={`/itemdetail/${id}`}>
         <picture>
-          <img src={productImg} alt='Product illustration' />
+          <img src={productImg} alt={productName} />
         </picture>
         <h3>{productName}</h3>
       </Link>

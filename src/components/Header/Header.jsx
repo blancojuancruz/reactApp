@@ -23,7 +23,9 @@ export const Header = () => {
         <div className='userSection'>
           <LogInModal />
           <span>
-            <Link to='/clientCart'><CartWidget className='cartIcon' /></Link>
+            <Link to='/clientCart'>
+              <CartWidget className='cartIcon' />
+            </Link>
           </span>
         </div>
       </section>
