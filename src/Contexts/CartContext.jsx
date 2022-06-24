@@ -7,13 +7,13 @@ export const CartContextProvider = ({ children }) => {
 
   const isInCart = (productID) => !!cart.find(product => product.id === productID)
 
-  const addProduct = (productDetail, count) => {
-    if (isInCart(productDetail.id)) {
+  const addProduct = (productSelected, count) => {
+    if (isInCart(productSelected.id)) {
       setCart(cart.map(product => {
-        return product.id === productDetail.id ? { ...product, count: product.count + count } : product
+        return product.id === productSelected.id ? { ...product, count: product.count + count } : product
       }))
     } else {
-      setCart([...cart, { ...productDetail, count }])
+      setCart([...cart, { ...productSelected, count }])
     }
   }
 
