@@ -1,3 +1,20 @@
+.paddingLink {
+    display: flex;
+    align-items: center;
+    color: #0000008C;
+    padding: 0.5em;
+}
+
+.dropdownMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdownMenu a {
+    color: #0000008C;
+    padding: 0.5em;
+}
+
 .navbar {
     width: 100%;
     justify-content: center;

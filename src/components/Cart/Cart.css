@@ -1,0 +1,46 @@
+.cartItemsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 0;
+    font-family: var(--ndFont);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding);
+}
+
+.titleImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.titleImgContainer h6 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cartItem .titleImgContainer picture img {
+    width: 200px;
+}
+
+.noProductCart {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.cartFooter {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}

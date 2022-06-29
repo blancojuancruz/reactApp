@@ -91,12 +91,31 @@
 
 .cartIcon {
     color: var(--stColor);
-    font-size: 1.3em;
     cursor: pointer;
+    position: relative;
 }
 
 .cartIcon svg {
     vertical-align: baseline;
+    font-size: 2em;
+}
+
+.cartIcon span {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 1em;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 1.5em;
+    font-size: .8em;
+}
+
+.cartIconOpacity {
+    font-size: 2em;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 991px) {
