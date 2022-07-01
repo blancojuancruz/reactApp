@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 import { Product } from './Item'
 import { Spinner } from '../Buttons/MySpinner/Spinner'
-import { getProducts } from '../../Services/getProducts'
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 export const ItemList = () => {
   const [products, setMyProducts] = useState([])
@@ -16,10 +16,20 @@ export const ItemList = () => {
 
   useEffect(() => {
     setIsLoading(true)
-    getProducts().then((data) => {
-      setIsLoading(false)
-      productsType ? setMyProducts(data.filter(product => product.type === productsType)) : setMyProducts(data)
-    })
+    const getDataBase = getFirestore()
+    const dbCollection = collection(getDataBase, 'products')
+    if (productsType) {
+      const filter = query(dbCollection, where('type', '==', productsType))
+      getDocs(filter).then((products) => {
+        setMyProducts(products.docs.map(product => ({ id: product.id, ...product.data() })))
+        setIsLoading(false)
+      })
+    } else {
+      getDocs(dbCollection).then((products) => {
+        setMyProducts(products.docs.map(product => ({ id: product.id, ...product.data() })))
+        setIsLoading(false)
+      })
+    }
   }, [productsType])
 
   const showRebateProduct = products

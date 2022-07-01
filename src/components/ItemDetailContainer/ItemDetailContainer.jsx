@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { ItemDetail } from './ItemDetail'
-import { getProducts } from '../../Services/getProducts'
+// import { getProducts } from '../../Services/getProducts'
 import { Spinner } from '../Buttons/MySpinner/Spinner'
+import { getFirestore, doc, getDoc } from 'firebase/firestore'
 import './ItemDetailContainer.css'
 
 export const ItemDetailContainer = () => {
@@ -15,10 +16,10 @@ export const ItemDetailContainer = () => {
     setIsLoading(true)
     setTimeout(() => {
       setIsLoading(false)
-      getProducts().then((detail) =>
-        setProductDetail(detail.find((product) => product.id === productID))
-      )
-    }, 3000)
+      const getDataBase = getFirestore()
+      const dataBaseDoc = doc(getDataBase, 'products', productID)
+      getDoc(dataBaseDoc).then(detail => setProductDetail({ id: detail.id, ...detail.data() }))
+    }, 1000)
   }, [productID])
 
   return isLoading ? <Spinner /> : <ItemDetail productDetail={productDetail} />

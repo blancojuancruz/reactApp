@@ -1,13 +1,13 @@
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable react/jsx-indent */
 
-import React, { useContext } from 'react'
+import React from 'react'
 import { BsCartFill } from 'react-icons/bs'
 import { FaPlusSquare, FaMinusSquare } from 'react-icons/fa'
-import { CartContext } from '../../../Contexts/CartContext'
+import { useCartContext } from '../../../Hooks/CartContextHook'
 
 export const CartWidget = () => {
-  const { cart, totalProducts } = useContext(CartContext)
+  const { cart, totalProducts } = useCartContext()
 
   return (
     cart.length === 0

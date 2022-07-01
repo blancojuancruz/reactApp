@@ -1,16 +1,16 @@
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable react/jsx-indent */
 
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { CartItem } from './CartItem'
-import { CartContext } from '../../Contexts/CartContext'
+import { useCartContext } from '../../Hooks/CartContextHook'
 import { FaCartPlus } from 'react-icons/fa'
 import { Button } from '../Buttons/Buttons'
 import './Cart.css'
 
 export const Cart = () => {
-  const { cart, cleanCart, totalPrice, totalProducts } = useContext(CartContext)
+  const { cart, cleanCart, totalPrice, totalProducts } = useCartContext()
 
   return (
     <section className='cartItemsContainer'>

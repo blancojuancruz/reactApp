@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Button } from '../Buttons/Buttons'
-import { CartContext } from '../../Contexts/CartContext'
+import { useCartContext } from '../../Hooks/CartContextHook'
 import { MdDelete } from 'react-icons/md'
 import './Cart.css'
 
 export const CartItem = ({ product }) => {
-  const { removeProduct } = useContext(CartContext)
+  const { removeProduct } = useCartContext()
 
   return (
     <>
