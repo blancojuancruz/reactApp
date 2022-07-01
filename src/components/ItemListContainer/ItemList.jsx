@@ -8,10 +8,12 @@ import { Product } from './Item'
 import { Spinner } from '../Buttons/MySpinner/Spinner'
 import { getDataBase } from '../../Services/Firebase/FirebaseInit'
 import { collection, getDocs, query, where } from 'firebase/firestore'
+import { useLoading } from '../../Hooks/LoadingHook'
 
 export const ItemList = () => {
   const [products, setMyProducts] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
+
+  const { isLoading, showLoading, hideLoading } = useLoading()
 
   const { productsType } = useParams()
 
@@ -19,18 +21,18 @@ export const ItemList = () => {
   const dbCollection = collection(getDataBase, 'products')
 
   useEffect(() => {
-    setIsLoading(true)
+    showLoading()
     const getProducts = async () => {
       if (productsType) {
         const filter = query(dbCollection, where('type', '==', productsType))
         await getDocs(filter).then((products) => {
           setMyProducts(products.docs.map(product => ({ id: product.id, ...product.data() })))
-          setIsLoading(false)
+          hideLoading()
         })
       } else {
         await getDocs(dbCollection).then((products) => {
           setMyProducts(products.docs.map(product => ({ id: product.id, ...product.data() })))
-          setIsLoading(false)
+          hideLoading()
         })
       }
     }
