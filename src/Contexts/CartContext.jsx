@@ -25,12 +25,6 @@ export const CartContextProvider = ({ children }) => {
 
   const totalProducts = () => cart.reduce((acc, prod) => acc + prod.count, 0)
 
-  // const removeSingleProduct = (productCount) => {
-  //   const product = cart.find(product => product.count === productCount)
-  //   const index = cart.indexOf(product)
-  //   cart.splice(index, 1)
-  // }
-
   return (
     <div>
       <CartContext.Provider value={{ addProduct, cleanCart, isInCart, removeProduct, totalPrice, totalProducts, cart }}>
