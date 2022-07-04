@@ -1,5 +1,6 @@
 import React from 'react'
 import notFound from '../../assets/notFound.png'
+import './Error404.css'
 
 export const Error404 = () => {
   const styles = {
