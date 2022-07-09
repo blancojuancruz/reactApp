@@ -39,7 +39,7 @@ export const BuyOrder = () => {
     }
 
     const buyOrdersCollection = collection(getDataBase, 'buyOrders')
-    addDoc(buyOrdersCollection, buyOrder)
+    await addDoc(buyOrdersCollection, buyOrder)
       .then((doc) => {
         setBuyOrderId(doc.id)
         cleanCart()
