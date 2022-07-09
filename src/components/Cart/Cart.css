@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    padding: 1em 0;
+    padding: 1em;
     font-family: var(--ndFont);
     font-size: 1em;
     font-weight: bold;
@@ -23,6 +23,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    max-width: 500px;
 }
 
 .titleImgContainer h6 {
@@ -45,9 +46,29 @@
     margin-top: 5rem;
 }
 
+.generateOrder {
+    margin-top: 3rem;
+    padding: .5em;
+    width: max-content;
+    align-self: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 @media screen and (max-width: 991px) {
-    .cartItem {
+
+    .cartItem,
+    .cartFooter {
         flex-direction: column;
         gap: 25px;
+        align-items: center;
     }
 }

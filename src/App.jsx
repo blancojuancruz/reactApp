@@ -8,6 +8,7 @@ import { Cart } from './components/Cart/Cart'
 import { Error404 } from './components/NotFound/Error404'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartContextProvider } from './Contexts/CartContext'
+import { BuyOrder } from './components/BuyOrders/BuyOrder'
 
 function App () {
   return (
@@ -21,6 +22,7 @@ function App () {
             <Route path='/typeofproduct/:productsType' element={<ItemListContainer />} />
             <Route path='/itemdetail/:productID' element={<ItemDetailContainer />} />
             <Route path='/clientCart' element={<Cart />} />
+            <Route path='/generateBuyOrder' element={<BuyOrder />} />
             <Route path='*' element={<Error404 />} />
           </Routes>
         </CartContextProvider>

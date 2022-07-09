@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Modal, Group, Button } from '@mantine/core'
-import { LogInForm } from '../../Forms/MyForms'
 
 export const LogInModal = () => {
   const [opened, setOpened] = useState(false)
@@ -11,9 +10,7 @@ export const LogInModal = () => {
         opened={opened}
         onClose={() => setOpened(false)}
         title='Ingresar'
-      >
-        <LogInForm />
-      </Modal>
+      />
 
       <Group position='center'>
         <Button

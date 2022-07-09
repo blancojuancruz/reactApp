@@ -25,7 +25,7 @@ export const ItemDetail = ({ productDetail }) => {
         <span>Precio por unidad: ${productDetail.productPrice}</span>
         <p>Stock Disponible: {productDetail.stock} unidades</p>
         {buyProduct
-          ? <><Link to='/clientCart'><Button btnTxt='Terminar mi compra' className='buyButton' /></Link><Link to='/'><Button btnTxt='Seguir comprando' className='buyButton' /></Link></>
+          ? <><Link to='/clientCart'><Button btnTxt='Ir al carrito' className='buyButton' /></Link><Link to='/'><Button btnTxt='Seguir comprando' className='buyButton' /></Link></>
           : <Counter
               initialValue={0}
               stock={productDetail.stock}

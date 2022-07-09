@@ -33,10 +33,11 @@ export const Cart = () => {
                   </h6>
                 </div>
                 <span>
-                  Precio total: {parseFloat(totalPrice())}
+                  Precio total: {totalPrice()}
                 </span>
                 <Button className='cleanCart' btnTxt='Limpiar Carrito' event={() => cleanCart()} />
               </div>
+              <Link to='/generateBuyOrder' className='generateOrder'>Terminar mi compra</Link>
             </>
       }
     </section>

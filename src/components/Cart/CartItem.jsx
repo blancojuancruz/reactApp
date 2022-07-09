@@ -19,8 +19,8 @@ export const CartItem = ({ product }) => {
           </picture>
         </div>
         <span>Cantidad: {product.count}</span>
-        <span>Precio por unidad: {product.productPrice}</span>
-        <span>Subtotal: {parseFloat(product.count * product.productPrice)}</span>
+        <span>Precio por unidad: ${product.productPrice}</span>
+        <span>Subtotal: ${product.count * product.productPrice}</span>
         <Button className='removeBtn' btnTxt={<MdDelete />} event={() => removeProduct(product.id)} />
       </div>
     </>

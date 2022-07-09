@@ -1,0 +1,160 @@
+.buyOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.orderHeader h3,
+p {
+    text-align: center;
+}
+
+.productsSpecific {
+    display: flex;
+    flex-direction: column;
+    padding: .3em;
+    border: 2px solid #024dbc;
+    margin-top: 10px;
+}
+
+.buyOrder form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em;
+    width: 70%;
+}
+
+.buttonsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buyBtn {
+    width: 30%;
+    margin-top: .5em;
+    align-items: center;
+    background-color: #06f;
+    border: 2px solid #06f;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.buyBtn:focus {
+    color: #171e29;
+}
+
+.buyBtn:hover {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+}
+
+.buyBtn:active {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+}
+
+.cancelBtn {
+    width: 30%;
+    margin-top: .5em;
+    align-items: center;
+    background-color: #F33C3C;
+    border: 2px solid #F33C3C;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.cancelBtn:focus {
+    color: #171e29;
+}
+
+.cancelBtn:hover {
+    background-color: #eb5858;
+    border-color: #ee5858;
+    fill: #F33C3C;
+    color: #fff;
+}
+
+.cancelBtn:active {
+    background-color: #eb4a4a;
+    border-color: #F33C3C;
+    fill: #F33C3C;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.inputGroup label {
+    font-weight: bold;
+}
+
+.inputGroup input {
+    outline: none;
+    padding: 3px;
+}
+
+.inputError {
+    font-size: .8em;
+    color: red;
+}
+
+.buyOrderFinished {
+    text-align: center;
+    margin-top: 1em;
+    font-family: var(--ndFont);
+}
+
+@media (min-width: 768px) {
+
+    .buyBtn,
+    .cancelBtn {
+        min-width: 170px;
+    }
+}
