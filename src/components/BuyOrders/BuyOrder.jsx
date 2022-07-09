@@ -52,6 +52,7 @@ export const BuyOrder = () => {
         <h2>Gracias por su compra</h2>
         <span>Su numero de orden es: {buyOrderId}</span>
         <p>Guardelo para seguimiento de su compra</p>
+        <Link to='/'>Volver al inicio</Link>
       </div>
     )
   }
