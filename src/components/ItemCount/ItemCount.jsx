@@ -28,7 +28,7 @@ export const Counter = ({ stock, initialValue, addToCart }) => {
     count > initialValue
       ? (
         <Button
-          btnTxt='Limpiar carrito'
+          btnTxt='Limpiar cantidad'
           className='addToCart hoverEfct'
           event={() => { setCount(initialValue) }}
         />

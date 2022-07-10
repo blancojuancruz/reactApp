@@ -38,7 +38,6 @@
 .separateSection {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -79,14 +78,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
-    gap: 10px;
-}
-
-.userSection button:hover {
-    transition: .3s;
-    background-color: var(--ndColor);
-    color: #fff;
+    margin-left: 1em;
 }
 
 .cartIcon {

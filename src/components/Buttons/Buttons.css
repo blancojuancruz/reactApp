@@ -93,10 +93,11 @@
     border: none;
     border-radius: 5px;
     color: #fff;
-    padding: 0.8em 1.3em;
-    border-bottom: solid px #3483fa;
+    padding: 0.5em 1.3em;
+    border-bottom: solid #3483fa;
     text-transform: uppercase;
     font-weight: bold;
+    width: 80%;
 }
 
 .buyButton:active {

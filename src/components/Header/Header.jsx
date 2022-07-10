@@ -2,7 +2,6 @@ import React from 'react'
 import { SocialButtons } from './SocialMedia'
 import { CartWidget } from '../Buttons/MyIcons/Icons'
 import { Button } from '../Buttons/Buttons'
-import { LogInModal } from './LogInModal/LogInModal'
 import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.jpg'
@@ -21,7 +20,6 @@ export const Header = () => {
       <section className='separateSection'>
         <SocialButtons />
         <div className='userSection'>
-          <LogInModal />
           <span>
             <Link to='/clientCart'>
               <CartWidget className='cartIcon' />

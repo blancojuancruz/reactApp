@@ -37,3 +37,20 @@ code {
   --ndFont: 'Poppins', sans-serif;
   --fontSize: 1.5em;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+ul,
+ol,
+li,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Counter } from '../ItemCount/ItemCount'
-import { Button } from '../Buttons/Buttons'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../Hooks/CartContextHook'
 import './ItemDetailContainer.css'
@@ -25,7 +24,7 @@ export const ItemDetail = ({ productDetail }) => {
         <span>Precio por unidad: ${productDetail.productPrice}</span>
         <p>Stock Disponible: {productDetail.stock} unidades</p>
         {buyProduct
-          ? <><Link to='/clientCart'><Button btnTxt='Ir al carrito' className='buyButton' /></Link><Link to='/'><Button btnTxt='Seguir comprando' className='buyButton' /></Link></>
+          ? <><Link to='/clientCart'>Ir al carrito</Link><Link to='/'>Seguir comprando</Link></>
           : <Counter
               initialValue={0}
               stock={productDetail.stock}
