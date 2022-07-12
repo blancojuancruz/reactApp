@@ -32,8 +32,14 @@
     font-weight: 700;
 }
 
-.cartItem .titleImgContainer picture img {
+.cartItem .titleImgContainer picture {
     width: 200px;
+}
+
+.cartItem .titleImgContainer picture img {
+    width: 100%;
+    display: block;
+    height: auto;
 }
 
 .noProductCart {
@@ -71,5 +77,11 @@ input[type=number] {
         flex-direction: column;
         gap: 25px;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titleImgContainer {
+        min-width: 200px;
     }
 }
