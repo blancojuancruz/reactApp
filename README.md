@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# HardwareStore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ecommerce of components for PC/Notebooks and all of kind of elements for gaming 
 
-## Available Scripts
 
-In the project directory, you can run:
+## About my project
 
-### `npm start`
+HardwareStore it is the first project I did with React. It is a hardware-oriented ecommerce. 
+Here you can apply all the basic and most used concepts of the library, from state management to api calls, 
+connection with firebase and much more.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Estoy muy contento con este nuevo proyecto y espero que les guste tambien
+I am very happy with this new project and I hope you like it too.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you want to edit the code first clone the repository. To do this, go to your favorite terminal and use the git clone + url of the repository command. Once the repository is cloned, install the dependencies with the npm install command
 
-### `npm test`
+¡Clever! the code is ready to be edited
+    
+## Run Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the project
 
-### `npm run build`
+```bash
+  git clone https://github.com/blancojuancruz/reactApp
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Go to the project directory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  cd my-project
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install dependencies
 
-### `npm run eject`
+```bash
+  npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Demo
+![Screenshot_44](https://user-images.githubusercontent.com/99100776/178858075-ceac5feb-fc36-4640-aa5b-c92d58a36db5.png)
+![Screenshot_45](https://user-images.githubusercontent.com/99100776/178858103-aa60a986-1e20-4d5a-92bc-6bafd8d76a75.png)
+![Screenshot_46](https://user-images.githubusercontent.com/99100776/178858108-bb06ddb9-0765-4c85-84b0-d0f8f255213b.png)
+![Screenshot_47](https://user-images.githubusercontent.com/99100776/178858112-440c5836-9c8e-4937-a072-a2251d68ee1c.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [@blancojuancruz](https://github.com/blancojuancruz)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Feedback
 
-### Analyzing the Bundle Size
+If you have any feedback, please reach out to us at blancojuanchi@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
