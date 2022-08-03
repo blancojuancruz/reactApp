@@ -8,13 +8,13 @@ export const Product = ({
   id
 }) => {
   return (
-    <div className='productContainer'>
+    <article className='productContainer'>
       <Link to={`/itemdetail/${id}`}>
         <picture>
           <img src={productImg} alt={productName} />
         </picture>
         <h3>{productName}</h3>
       </Link>
-    </div>
+    </article>
   )
 }
