@@ -9,7 +9,6 @@ HardwareStore it is the first project I did with React. It is a hardware-oriente
 Here you can apply all the basic and most used concepts of the library, from state management to api calls, 
 connection with firebase and much more.
 
-Estoy muy contento con este nuevo proyecto y espero que les guste tambien
 I am very happy with this new project and I hope you like it too.
 ## Installation
 
@@ -28,7 +27,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd reactApp
 ```
 
 Install dependencies
